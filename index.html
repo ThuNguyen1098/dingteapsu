@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ding Tea PSU | Homepage</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="script.js">
+
+</head>
+<body>
+  <!-- Nav bar -->
+  <nav class="navbar">
+    <div class="menu">
+      <a href="index.html">MENU</a>
+      <a href="contact.html">CONTACT US - CARING/EVENTS</a>
+      <div id="logo">
+        <a href="index.html"><img src="photos/Logo.png" alt="logo" width="295px"></a>
+      </div>
+      <a href="account.html">ACCOUNT</a>
+      <a href="">CART</a>
+      <a href="">MY ORDERS</a>
+    </div>
+  </nav>
+
+  <!-- Slide bar-->
+  <div class="slidebar">
+
+    <div class="best">
+      <p>#BEST</p>
+    </div>
+    <div class="seller">
+      <p>SELLER</p>
+    </div>
+
+    <div class="top5">
+
+      <div class="slide-content">
+        <div class="slide-img">
+          <img src="photos/strawberry-01.png" alt="strawberry">
+        </div>
+
+        <div class="slide-category">
+          <p>Straw
+          <br>berry</p>
+        </div>
+        <div class="slide-milktea">
+          <p>Milk
+          <br>Tea</p>
+        </div>
+      </div>
+
+      <div class="slide-content">
+        <div class="slide-img">
+          <img src="photos/original-01.png" alt="bubble">
+        </div>
+
+        <div class="slide-category">
+          <p>Bubble</p>
+        </div>
+        <div class="slide-milktea">
+          <p>Milk
+          <br>Tea</p>
+        </div>
+      </div>
+
+      <div class="slide-content">
+
+        <div class="slide-img">
+          <img src="photos/jixuan-01.png" alt="jixuan">
+        </div>
+
+        <div class="slide-category">
+          <p>Ji-xuan
+          <br>Tea</p>
+        </div>
+        <div class="slide-milktea">
+          <p>Deli-
+          <br>Tea</p>
+        </div>
+      </div>
+
+      <div class="slide-content">
+        
+        <div class="slide-img">
+          <img src="photos/tigersugar-01.png" alt="tigersugar">
+        </div>
+
+        <div class="slide-category">
+          <p>Tiger
+          <br>Sugar</p>
+        </div>
+        <div class="slide-milktea">
+          <p>Milk
+          <br>Tea</p>
+        </div>
+      </div>
+
+      <div class="slide-content">
+        
+        <div class="slide-img">
+          <img src="photos/matcha-01.png" alt="matcha">
+        </div>
+
+        <div class="slide-category">
+          <p>Matcha</p>
+        </div>
+        <div class="slide-milktea">
+          <p>Milk
+          <br>Tea</p>
+        </div>
+      </div>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center" class="slide-dot">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      
+      <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("slide-content");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>
+
+    </div>
+
+    <div class="dingtea">
+      <p>DINGTEA</p>
+    </div>
+
+  </div>
+
+  <!-- Menu -->
+  <div class="foodlist">
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'freshtea')" id="defaultOpen">Fresh Tea</button>
+      <button class="tablinks" onclick="openCity(event, 'milktea')">Milk Tea</button>
+      <button class="tablinks" onclick="openCity(event, 'flavoredtea')">Flavored Tea</button>
+      <button class="tablinks" onclick="openCity(event, 'fruitjuice')">Fruit Juice</button>
+      <button class="tablinks" onclick="openCity(event, 'slush')">Slush</button>
+      <button class="tablinks" onclick="openCity(event, 'yakult')">Yakult</button>
+      <button class="tablinks" onclick="openCity(event, 'yogurt')">Yogurt</button>
+      <button class="tablinks" onclick="openCity(event, 'coffe')">Coffe</button>
+      <button class="tablinks" onclick="openCity(event, 'hotdrinks')">Hot drinks</button>
+      <button class="tablinks" onclick="openCity(event, 'latte')">Latte</button>
+      <button class="tablinks" onclick="openCity(event, 'taiyaki')">Taiyaki - Japanese Fish</button>
+    </div>
+    
+    <div id="freshtea" class="tabcontent">
+      <h3>Fresh Tea</h3>
+      <p>Assam Black Tea</p>
+    </div>
+    
+    <div id="milktea" class="tabcontent">
+      <h3>Milk Tea</h3>
+      <p>BlueBerry Black Milk Tea</p>
+    </div>
+    
+    <div id="flavoredtea" class="tabcontent">
+      <h3>Flavored Tea</h3>
+      <p>Blueberry Green Tea</p>
+    </div>
+
+    <div id="fruitjuice" class="tabcontent">
+      <h3>Flavored Tea</h3>
+      <p>Blueberry Green Tea</p>
+    </div>
+
+    <div id="slush" class="tabcontent">
+      <h3>Flavored Tea</h3>
+      <p>Blueberry Green Tea</p>
+    </div>
+
+    <div id="yakult" class="tabcontent">
+      <h3>Flavored Tea</h3>
+      <p>Blueberry Green Tea</p>
+    </div>
+
+    <div id="yogurt" class="tabcontent">
+      <h3>Flavored Tea</h3>
+      <p>Blueberry Green Tea</p>
+    </div>
+
+    <div id="coffe" class="tabcontent">
+      <h3>Flavored Tea</h3>
+      <p>Blueberry Green Tea</p>
+    </div>
+
+    <div id="hotdrinks" class="tabcontent">
+      <h3>Flavored Tea</h3>
+      <p>Blueberry Green Tea</p>
+    </div>
+
+    <div id="latte" class="tabcontent">
+      <h3>Flavored Tea</h3>
+      <p>Blueberry Green Tea</p>
+    </div>
+
+    <div id="taiyaki" class="tabcontent">
+      <h3>Flavored Tea</h3>
+      <p>Blueberry Green Tea</p>
+    </div>
+
+    <script>
+      function openCity(evt, cityName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the link that opened the tab
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+      }
+
+      /* Show a tab by default */
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+
+  </div>
+</body>
+</html>
