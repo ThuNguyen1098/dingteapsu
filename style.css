@@ -1,0 +1,386 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color:#FFFAF7;
+  font-weight: normal;
+}
+
+/* Nav bar */
+.navbar {
+  position: relative;
+  background-color: #FCEADE;
+  overflow: auto;
+  margin: auto;
+}
+.navbar .menu {
+  margin: 15px 100px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 20px;
+}
+.navbar a {
+  font-family: Roboto;
+  margin: auto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #D1734E;
+}
+.navbar a:hover {
+  color: black;
+}
+.navbar #logo {
+  margin: auto;
+}
+
+/* This is for Homepage */
+/* Slide bar */
+.slidebar {
+  background-color: #FCEADE;
+  margin: 0;
+  position: relative;
+  height: 610px;
+  width: 100vw;
+}
+.slidebar .best {
+  position: absolute;
+  left: -140px;
+  top: 340px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100px;
+  text-align: center;
+  transform: rotate(-90deg);
+}
+.slidebar .best p {
+  color: #FCEADE;
+  -webkit-text-fill-color: #FCEADE;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #D1734E;
+  margin: 0;
+  padding: 0;
+}
+.slidebar .seller {
+  position: absolute;
+  left: -70px;
+  top: 140px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100px;
+  text-align: center;
+  transform: rotate(-90deg);
+}
+.slidebar .seller p {
+  -webkit-text-fill-color: #FCEADE;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #D1734E;
+}
+
+.slidebar .top5 {
+  width: 60%;
+  height: 70%;
+	margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  position: relative;
+}
+.top5 .slide-category {
+  position: absolute;
+  top: 0;
+  left: 0;;
+}
+.top5 .slide-img {
+  width: 60%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+.top5 .slide-milktea {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.slide-img img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+.slide-category p {
+  text-align: left;
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 80px;
+  color: #D1734E;
+}
+.slide-milktea p {
+  text-align: left;
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 80px;
+  color: #D1734E;
+}
+
+.slidebar .dingtea {
+  position: absolute;
+  top: 190px;
+  right: -255px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 125px;
+  line-height: 146px;
+  transform: rotate(-90deg);
+}
+.slidebar .dingtea p {
+  -webkit-text-fill-color: #FCEADE;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #D1734E;
+}
+.top5 .slide-dot {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #D1734E;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #F7D5B9;
+}
+
+/* Food list */
+.foodlist {
+  margin: 95px 75px 95px 75px;
+  height: fit-content;
+  font-family: Roboto;
+  display: flex;
+}
+    /* Style the tab */
+.tab {
+  float: left;
+  background-color: #D1734E;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 30px;
+}
+    /* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: #D1734E;
+  color: #FEE6CA;
+  padding: 9px 15px;
+  font-size: 24px;
+  width: 100%;
+  border-top: 3px solid #FEE6CA;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tab #tabmenu {
+  color: #FEE6CA;
+  font-weight: bold;
+  padding: 9px 15px;
+  font-size: 48px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+}
+    /* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #FEE6CA;
+  color: #D1734E;
+}
+    /* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #FEE6CA;
+  color: #D1734E;
+}
+    /* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 15px;
+  background-color: #FEE6CA;
+  color: #D1734E;
+  border: none;
+  flex-grow: 1;
+  display: block;
+  height: fit-content;
+}
+.tabcontent .tabtitle {
+  background-color: #D1734E;
+  color: #FEE6CA;
+  padding: 7px 15px;
+  font-size: 48px;
+  overflow: auto;
+}
+.tabcontent .tabtitle .eng {
+  float: left;
+  text-align: left;
+  clear:left;
+}
+.tabcontent .tabtitle .chi {
+  float: right;
+  text-align: right;
+  clear:right;
+}
+
+.tabcontent .drinksoption {
+  padding: 15px 15px;
+  border-bottom: 3px solid #BE7248;
+  font-size: 24px;
+  overflow: auto;
+}
+.tabcontent .drinksoption:last-child {
+  border: none;
+}
+.tabcontent .drinksoption .teaname{
+  text-align: left;
+  clear:left;
+  float: left;
+}
+.tabcontent .drinksoption .choose {
+  text-align: right;
+  float: right;
+  clear:right;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 13px;
+}
+.tabcontent .drinksoption .choose .teaadd {
+  width: 35px;
+  height: 35px;
+  border: 3px solid #BE7248;
+  text-align: center;
+}
+.tabcontent a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #BE7248;
+  text-align: center;
+}
+.tabcontent a:hover {
+  color: #FCEADE;
+}
+.tabcontent .more {
+  padding: 15px 15px;
+  border: 3px solid #BE7248;
+  border-top: none;
+  margin: auto;
+}
+.tabcontent .more:hover {
+  background-color:#D1734E;
+}
+
+/* This is for Contact page */
+.info {
+  margin: 100px;
+  font-family: Roboto;
+  color: #D1734E;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+.info .maps {
+  width: fit-content;
+  border: #FCEADE 10px solid;
+}
+
+.info .textinfo {
+  font-size: 18px;
+  line-height: 36px;
+}
+.info .textinfo .name {
+  font-weight: bold;
+  font-size: 36px;
+}
+.info .textinfo a {
+  text-decoration: underline;
+  color: #D1734E;
+}
+.info .textinfo .note {
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* This is for Account page */
+.signin {
+  width: 60%;
+  margin: auto;
+  padding: 5% 15%;
+}
+.signin label {
+  font-family: Roboto;
+  color: #D1734E;
+}
+.signin input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid #D1734E;
+  font-family: Roboto;
+}
+.signin button {
+  background-color: #D1734E;
+  color: #FCEADE;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.signin button:hover {
+  background-color: #FEE6CA;
+  color: #D1734E;
+}
+.signin .forgot {
+  float: right;
+  font-family: Roboto;
+  color: #D1734E;
+}
+.signin a {
+  color: #1f1f1f;
+  text-decoration: underline;
+}
+
+.signin .signup {
+  font-family: Roboto;
+  color: #D1734E;
+}
