@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ding Tea PSU | Account</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <!-- Nav bar -->
+  <nav class="navbar">
+    <div class="menu">
+      <a href="index.html">MENU</a>
+      <a href="contact.html">CONTACT US - CARING/EVENTS</a>
+      <div id="logo">
+        <a href="index.html"><img src="photos/Logo.png" alt="logo" width="295px"></a>
+      </div>
+      <a href="account.html">ACCOUNT</a>
+      <a href="">CART</a>
+      <a href="">MY ORDERS</a>
+    </div>
+  </nav>
+
+  <!-- Hamburger menu -->
+  <div class="mobile-container">
+    <nav class="hamburgermenu">
+      <!-- Top Navigation Menu -->
+      <div id="logomobile">
+        <a href="index.html"><img src="photos/Logo.png" alt="logo" width="180px"></a>
+      </div>
+      <div id="menu">
+        <a href="index.html">MENU</a>
+        <a href="contact.html">CONTACT US - CARING/EVENTS</a>
+        <a href="account.html">ACCOUNT</a>
+        <a href="#">CART</a>
+        <a href="#">MY ORDERS</a>
+      </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+    </nav>
+  </div>
+
+  <!-- Sign in/Sign up -->
+  <div class="signin">
+    <form action="/action_page.php" method="post">
+      <div class="container">
+        <label for="poe"><b>Phone number or Email</b></label>
+        <input type="text" placeholder="Enter Phone number or Email" name="poe" required>
+
+        <br>
+        <br>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <br>
+
+        <button type="submit">Login</button>
+
+        <label class="rememberme">
+          <input type="checkbox" name="remember"> Remember me
+        </label>
+        <span class="forgot">Forgot <a href="#">password?</a></span>
+      </div>
+      
+      <br>
+      <br>
+
+      <div class="signup">
+        Don's have an account? <a href="#">Sign up</a>
+      </div>
+
+    </form>
+  </div>
+</body>
+</html>
